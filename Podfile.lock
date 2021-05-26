@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.4.0)
+  - Kingfisher (6.3.0)
+  - SwiftVideoBackground (3.4.0)
+  - Swinject (2.7.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kingfisher
+  - SwiftVideoBackground
+  - Swinject
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kingfisher
+    - SwiftVideoBackground
+    - Swinject
+
+SPEC CHECKSUMS:
+  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
+  SwiftVideoBackground: 826e0567c737ded2a211aa309e9951c643695e8f
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+
+PODFILE CHECKSUM: 935281128233c019c0c3e5e87176b6a5809e4252
+
+COCOAPODS: 1.10.1

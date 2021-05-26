@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="gTV-IL-0wX" customClass="PhotoCollectionViewCell" customModule="Media_Monks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="243" height="272"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="243" height="272"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GcV-w0-KOA">
+                        <rect key="frame" x="0.0" y="0.0" width="243" height="243"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZaD-wR-WUw">
+                                <rect key="frame" x="0.0" y="1" width="243" height="240.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZaD-wR-WUw" firstAttribute="leading" secondItem="GcV-w0-KOA" secondAttribute="leading" id="Q7K-05-6EU"/>
+                            <constraint firstAttribute="bottom" secondItem="ZaD-wR-WUw" secondAttribute="bottom" id="iN5-85-81y"/>
+                            <constraint firstAttribute="trailing" secondItem="ZaD-wR-WUw" secondAttribute="trailing" id="iv2-vi-wzs"/>
+                            <constraint firstItem="ZaD-wR-WUw" firstAttribute="top" secondItem="GcV-w0-KOA" secondAttribute="top" id="ivc-GT-8qF"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oef-0X-MOd">
+                        <rect key="frame" x="5" y="251" width="233" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="gew-QM-092"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="oef-0X-MOd" secondAttribute="bottom" id="1UX-0e-qdV"/>
+                <constraint firstItem="GcV-w0-KOA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4dX-xm-VrV"/>
+                <constraint firstAttribute="trailing" secondItem="oef-0X-MOd" secondAttribute="trailing" constant="5" id="6Hc-oi-PmC"/>
+                <constraint firstItem="GcV-w0-KOA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MZb-D8-Qjn"/>
+                <constraint firstItem="oef-0X-MOd" firstAttribute="top" secondItem="GcV-w0-KOA" secondAttribute="bottom" constant="8" symbolic="YES" id="UEr-4T-ehC"/>
+                <constraint firstAttribute="trailing" secondItem="GcV-w0-KOA" secondAttribute="trailing" id="ob2-j0-Vjd"/>
+                <constraint firstItem="oef-0X-MOd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="vkC-jq-hfr"/>
+            </constraints>
+            <size key="customSize" width="243" height="272"/>
+            <connections>
+                <outlet property="containerView" destination="GcV-w0-KOA" id="7Sn-z3-B8R"/>
+                <outlet property="imageView" destination="ZaD-wR-WUw" id="Zpj-7F-wAc"/>
+                <outlet property="titleLabel" destination="oef-0X-MOd" id="HZN-0w-JXX"/>
+            </connections>
+            <point key="canvasLocation" x="38.405797101449281" y="105.80357142857143"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="photo" catalog="system" width="128" height="93"/>
+    </resources>
+</document>

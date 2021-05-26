@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>pr-available-servers</key>
+	<dict>
+		<key>production</key>
+		<string>https://jsonplaceholder.typicode.com</string>
+		<key>demo</key>
+		<string>https://jsonplaceholder.typicode.com</string>
+	</dict>
+	<key>pr-default-server</key>
+	<string>production</string>
+	<key>pr-api-path</key>
+	<string></string>
+</dict>
+</plist>

@@ -1,0 +1,6 @@
+framework module Pods_Media_Monks {
+  umbrella header "Pods-Media Monks-umbrella.h"
+
+  export *
+  module * { export * }
+}

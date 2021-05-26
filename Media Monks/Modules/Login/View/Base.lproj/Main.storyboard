@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Media_Monks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEDIA MONKS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXG-aA-YNT">
+                                <rect key="frame" x="67" y="54" width="280" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="Vko-D1-kCD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fe7-u3-Ljd">
+                                <rect key="frame" x="20" y="197" width="374" height="27"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the email address and password you use to login to Media Monks" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOf-Yc-7ij">
+                                <rect key="frame" x="20" y="234" width="374" height="41.5"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qdv-BO-fT9">
+                                <rect key="frame" x="20" y="290.5" width="374" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JVc-bC-uoI">
+                                <rect key="frame" x="20" y="339.5" width="374" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vx-Sa-5Sv">
+                                <rect key="frame" x="20" y="752" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xYi-5q-VQc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="19"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2k6-Hh-oTa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ItC-Qu-4wu">
+                                <rect key="frame" x="20" y="807" width="374" height="31"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                <state key="normal" title="Enter without login and password">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginWithoutLoginAndPasswordAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rtx-NP-pqz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fe7-u3-Ljd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2Ka-rz-Ujs"/>
+                            <constraint firstItem="JVc-bC-uoI" firstAttribute="leading" secondItem="fe7-u3-Ljd" secondAttribute="leading" id="3Jj-BV-gSJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fe7-u3-Ljd" secondAttribute="trailing" constant="20" id="7UW-u5-SWS"/>
+                            <constraint firstItem="0vx-Sa-5Sv" firstAttribute="trailing" secondItem="fe7-u3-Ljd" secondAttribute="trailing" id="7xa-Aq-xeY"/>
+                            <constraint firstItem="fe7-u3-Ljd" firstAttribute="top" secondItem="UXG-aA-YNT" secondAttribute="bottom" constant="60" id="9g5-AM-vns"/>
+                            <constraint firstItem="jOf-Yc-7ij" firstAttribute="top" secondItem="fe7-u3-Ljd" secondAttribute="bottom" constant="10" id="Icl-NM-Cwd"/>
+                            <constraint firstItem="Qdv-BO-fT9" firstAttribute="leading" secondItem="fe7-u3-Ljd" secondAttribute="leading" id="Rlk-Tn-OyU"/>
+                            <constraint firstItem="ItC-Qu-4wu" firstAttribute="top" secondItem="0vx-Sa-5Sv" secondAttribute="bottom" constant="5" id="S7c-Ap-Ljm"/>
+                            <constraint firstItem="jOf-Yc-7ij" firstAttribute="leading" secondItem="fe7-u3-Ljd" secondAttribute="leading" id="SRl-fO-Qfl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0vx-Sa-5Sv" secondAttribute="bottom" constant="60" id="UaB-aa-4y8"/>
+                            <constraint firstItem="JVc-bC-uoI" firstAttribute="top" secondItem="Qdv-BO-fT9" secondAttribute="bottom" constant="15" id="bpJ-WF-CDu"/>
+                            <constraint firstItem="UXG-aA-YNT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="crY-wh-77l"/>
+                            <constraint firstItem="Qdv-BO-fT9" firstAttribute="top" secondItem="jOf-Yc-7ij" secondAttribute="bottom" constant="15" id="dcS-Mi-OiB"/>
+                            <constraint firstItem="ItC-Qu-4wu" firstAttribute="leading" secondItem="fe7-u3-Ljd" secondAttribute="leading" id="eVG-9P-a0e"/>
+                            <constraint firstItem="jOf-Yc-7ij" firstAttribute="trailing" secondItem="fe7-u3-Ljd" secondAttribute="trailing" id="h3X-K8-Q9y"/>
+                            <constraint firstItem="ItC-Qu-4wu" firstAttribute="trailing" secondItem="fe7-u3-Ljd" secondAttribute="trailing" id="iuE-cC-pyF"/>
+                            <constraint firstItem="UXG-aA-YNT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l22-Jk-6qH"/>
+                            <constraint firstItem="0vx-Sa-5Sv" firstAttribute="leading" secondItem="fe7-u3-Ljd" secondAttribute="leading" id="nYB-yi-gTd"/>
+                            <constraint firstItem="JVc-bC-uoI" firstAttribute="trailing" secondItem="fe7-u3-Ljd" secondAttribute="trailing" id="q2K-lw-r9d"/>
+                            <constraint firstItem="Qdv-BO-fT9" firstAttribute="trailing" secondItem="fe7-u3-Ljd" secondAttribute="trailing" id="vdR-0K-q2h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UXG-aA-YNT" secondAttribute="trailing" constant="67" id="ypY-XI-Z3d"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="89.732142857142847"/>
+        </scene>
+    </scenes>
+</document>
